@@ -1,4 +1,4 @@
-Build week: Unit 3, June 2021
+Build week: June 2021
 
 Project description: 
 (1) Take a Spotify song ID and return a visual representation of its audio features. 
@@ -6,7 +6,7 @@ Project description:
 
 Contributions:
 
-* Carl Stimson
+* Carl Stimson (unit 3)
 Built most of the Flask dashboard, including the HTML templates. This comprised landing and 
 results pages for the visualization and prediction features. Set up the Spotify API and helped 
 figure out how to pull data from it. Worked with Lucas in creating the functions in modules.py 
