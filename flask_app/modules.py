@@ -10,8 +10,8 @@ from flask_app.predict import wrangle
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 # Load dataframe
-# path = '../data/spotify_songs.csv'
-path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/data/spotify_songs.csv'
+path = '../data/spotify_songs.csv'
+# path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/data/spotify_songs.csv'
 df = pd.read_csv(path)
 # Wrangle data
 df2 = wrangle(df)
