@@ -10,6 +10,7 @@ pandas = "*"
 plotly = "*"
 sklearn = "*"
 joblib = "*"
+gunicorn = "*"
 
 [dev-packages]
 
