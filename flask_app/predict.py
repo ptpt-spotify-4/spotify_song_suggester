@@ -5,19 +5,19 @@ import pandas as pd
 import pickle
 
 # Load model
-# path = '../model/nn.joblib'
-path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/model/nn.joblib'
+path = '../model/nn.joblib'
+# path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/model/nn.joblib'
 nn = joblib.load(path)
-# dtm_filename = '../model/nlp_dtm.pkl'
-dtm_filename = '/Users/Carl/Desktop/datascience/spotify_song_suggester/model/nlp_dtm.pkl'
+dtm_filename = '../model/nlp_dtm.pkl'
+# dtm_filename = '/Users/Carl/Desktop/datascience/spotify_song_suggester/model/nlp_dtm.pkl'
 dtm = pickle.load(open(dtm_filename, 'rb'))
 
 # Connect to spotify API
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 # Load song dataframe
-# path = '../data/spotify_songs.csv'
-path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/data/spotify_songs.csv'
+path = '../data/spotify_songs.csv'
+# path = '/Users/Carl/Desktop/datascience/spotify_song_suggester/data/spotify_songs.csv'
 df = pd.read_csv(path)
 
 
