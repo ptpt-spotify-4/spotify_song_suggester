@@ -1,1 +1,1 @@
-web: gunicorn spotify_dashboard:APP
+web: gunicorn --pythonpath flask_app spotify_dashboard:APP
